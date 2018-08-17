@@ -2,7 +2,7 @@
 A simple example of calling native methods via jni on the android platform.
 
 
-## 实现过程：
+## 实现过程：(本例采用 Android.mk + application.mk + ndk-build 方式实现， 在AndroidStudio下使用CMake + CMakeLists.txt方式将更加简便)
 
    #### 1、创建一个Android工程：取名为JniDemo，新建一个 Java 文件，在该文件中加载 JNI 的库和定义需要通过 native 实现的方法，如：
   ```
