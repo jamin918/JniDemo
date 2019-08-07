@@ -17,7 +17,7 @@ A simple example of calling native methods via jni on the android platform.
   ```
  #### 2、进入到 JniMethod 所在的目录，使用 javac 命令编译该类，得到该类的 .class 文件，因为后面需要通过该 .class 文件生成 .h 头文件。
   
- #### 3、在项目src/java/目录下，使用 javah 命令生成与 JniMethod.class 文件相对应的 .h 头文件。
+ #### 3、在项目“src/main/java/”目录下(必须包含项目包名全路径)，使用命令：javah 应用包名.类名， 生成与 JniMethod.class 文件相对应的 .h 头文件。
   
  #### 4、为了方便，新建一个 jni 目录，保存所有与 JNI 相关的文件。将刚刚生成的 JniMethod.h 移到该目录中，然后创建一个 JniMethod.c 的文件实现定义在 JniMethod.h 头文件中的方法。
   
